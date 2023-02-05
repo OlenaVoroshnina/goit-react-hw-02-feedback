@@ -1,19 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-
-
-export default function Section ({title, children}) {
-    return(
+ const Section = ({title, children}) => (
         <section >
             {title &&  <h1 >{title}</h1>}
             {children}
-        </section>
-    )
-    
-};
+        </section>   
+ );
 
-
+export default Section;
 
 Section.propTypes = {
     title: PropTypes.string.isRequired,

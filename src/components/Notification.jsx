@@ -3,14 +3,13 @@ import PropTypes from "prop-types";
 
 
 
-export default function Notification ({message}) {
-    return(
+const Notification = ({message}) => (
         <>
-            {<p>{message}</p>}
-            
+            {<p>{message}</p>}  
         </>
-    )  
-};
+);
+
+export default Notification;
 
 
 
