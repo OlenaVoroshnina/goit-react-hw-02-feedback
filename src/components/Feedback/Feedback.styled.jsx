@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const Button = styled.button`
   display: inline-block;
@@ -6,23 +6,24 @@ export const Button = styled.button`
   padding: 1rem 0;
   margin: 0.5rem 1rem;
   width: 11rem;
-  background: green;
   font-size: 16px;
   color: white;
+  text-transform: uppercase;
   border: 2px solid white;
   cursor: pointer;
 
-  ${props =>
-    props.primary &&
-    css`
-      background: palevioletred; 
-    `};
-
-  ${props =>
-    props.second &&
-    css`
-      background: blueviolet;
-    `};
+  background-color: ${p => {
+  switch (p.option) {
+    case 'good':
+      return 'green';
+    case 'neutral':
+      return 'palevioletred';
+    case 'bad':
+      return 'blueviolet';
+    default:
+      return 'blue';
+  }
+  }};
 `
 
 export const Text = styled.p`
