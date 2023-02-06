@@ -25,10 +25,6 @@ export const Button = styled.button`
     `};
 `
 
-export const Title = styled.h1`
-  color: blue;
-`
-
 export const Text = styled.p`
   color: red;
 `
