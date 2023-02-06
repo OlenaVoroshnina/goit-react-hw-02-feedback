@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Text } from "./Feedback/Feedback.styled";
 
 
 
 const Notification = ({message}) => (
         <>
-            {<p>{message}</p>}  
+            {<Text>{message}</Text>}  
         </>
 );
 
